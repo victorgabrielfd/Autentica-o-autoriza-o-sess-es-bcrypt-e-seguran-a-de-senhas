@@ -1,3 +1,4 @@
+
 # 📋 App Tarefas com Login — Prática Aula 33
 
 Lista de tarefas pessoal com autenticação (registro + login + bcrypt).
@@ -12,3 +13,4 @@ Lista de tarefas pessoal com autenticação (registro + login + bcrypt).
 11-15. tarefaRoutes.ts — listar, adicionar, concluir, remover (PROTEGIDAS)
 
 ## Cada usuário vê SÓ suas tarefas (filtrado por userId)!
+
