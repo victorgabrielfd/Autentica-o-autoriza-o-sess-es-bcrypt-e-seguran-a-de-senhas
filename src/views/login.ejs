@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TaskFlow</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container auth-container">
+
+    <div class="center">
+        <h1>📋 TaskFlow</h1>
+        <p>Organize suas tarefas de forma simples e eficiente</p>
+    </div>
+
+    <% if (flash) { %>
+        <div class="flash">
+            <%= flash %>
+        </div>
+    <% } %>
+
+    <div class="card">
+
+        <h2>🔐 Entrar</h2>
+
+        <form method="POST" action="/login">
+
+            <div class="form-group">
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Senha</label>
+
+                <input
+                    type="password"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Entrar
+            </button>
+
+        </form>
+
+        <div class="link">
+            Não possui conta?
+            <a href="/registro">Criar conta</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
